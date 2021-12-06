@@ -1,17 +1,87 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
+    <base href="">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="152x152" href="<%= BASE_URL %>_landing_assets/images/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="<%= BASE_URL %>_landing_assets/images/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="<%= BASE_URL %>_landing_assets/images/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" href="<%= BASE_URL %>_landing_assets/images/apple-touch-icon.png">
+		<link rel="icon" href="<%= BASE_URL %>_landing_assets/images/apple-touch-icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/font/iconsmind-s/css/iconsminds.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/font/simple-line-icons/css/simple-line-icons.css" />
+
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/bootstrap.rtl.only.min.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/fullcalendar.min.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/datatables.responsive.bootstrap4.min.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/select2.min.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/select2-bootstrap.min.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/glide.core.min.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/bootstrap-stars.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/nouislider.min.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/component-custom-switch.min.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/bootstrap-float-label.min.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/main.css" />
+    
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/datatables.responsive.bootstrap4.min.css" />
+
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/bootstrap-float-label.min.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/bootstrap-tagsinput.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>_assets/css/vendor/cropper.min.css" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
   </head>
-  <body>
+  <body id="app-container" class="menu-default show-spinner">
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>We're sorry but doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+    
     <!-- built files will be auto injected -->
+    <script src="<%= BASE_URL %>_assets/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/vendor/select2.full.js"></script> 
+      <script src="<%= BASE_URL %>_assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/vendor/Chart.bundle.min.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/vendor/chartjs-plugin-datalabels.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/vendor/moment.min.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/vendor/fullcalendar.min.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/vendor/datatables.min.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/vendor/perfect-scrollbar.min.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/vendor/progressbar.min.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/vendor/jquery.barrating.min.js"></script>
+    
+    <script src="<%= BASE_URL %>_assets/js/vendor/nouislider.min.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/vendor/bootstrap-datepicker.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/vendor/Sortable.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/vendor/mousetrap.min.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/vendor/glide.min.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/dore.script.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/scripts.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/vendor/bootstrap-datepicker.js"></script>
+    
+    <script src="<%= BASE_URL %>_assets/js/vendor/bootstrap-notify.min.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/vendor/bootstrap-tagsinput.min.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/vendor/typeahead.bundle.js"></script>
+    <script src="<%= BASE_URL %>_assets/js/dore-plugins/select.from.library.js"></script>
+
+    <script src="<%= BASE_URL %>_assets/js/vendor/cropper.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.6/jspdf.plugin.autotable.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    
   </body>
 </html>
