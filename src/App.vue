@@ -34,6 +34,7 @@ export default {
         Login
     },
 }
+//asdasdas
 import $ from 'jquery';
 $(document).ready(function () {
   console.log($(window).width());
